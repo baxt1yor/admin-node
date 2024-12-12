@@ -15,6 +15,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@netlify/functions": "^2.8.2",
     "dotenv": "^16.4.7",
     "gramio": "^0.1.5"
   }

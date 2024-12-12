@@ -146,7 +146,4 @@ bot.on(["message"], async (context) => {
     
 });
 
-
-
-
-bot.start();
+export default bot;
