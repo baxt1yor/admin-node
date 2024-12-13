@@ -1,9 +1,7 @@
-const { bot } = require('../../dist/main');
+const bot = require('../../dist/main');
 
-exports.handler = async (event, context) => {
-  if (event.httpMethod === 'POST') {
+exports.handler = async (event) => {
     try {
-      // Parse incoming webhook from Telegram
       const update = JSON.parse(event.body);
       console.log('Received update:', update);
 
@@ -21,10 +19,4 @@ exports.handler = async (event, context) => {
         body: JSON.stringify({ message: 'Error processing webhook', error: error.message }),
       };
     }
-  }
-
-  return {
-    statusCode: 405,
-    body: JSON.stringify({ message: 'Method Not Allowed' }),
-  };
 };
