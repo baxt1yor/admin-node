@@ -2,11 +2,11 @@ const bot = require('../../dist/main');
 
 exports.handler = async (event) => {
   try {
-    const update = JSON.parse(event.body);
-    console.log('Received update:', update);
+    // const update = JSON.parse(event.body);
+    console.log('Received update:', event);
 
-    await bot.default.init();
-    await bot.default.updates.handleUpdate(update);
+    // await bot.default.init();
+    // await bot.default.updates.handleUpdate(update);
 
     return {
       statusCode: 200,
