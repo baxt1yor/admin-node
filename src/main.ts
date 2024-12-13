@@ -1,6 +1,5 @@
 import { Bot,ForceReplyKeyboard, Keyboard, MessageOriginUser } from "gramio";
 import {config as dotenv} from 'dotenv';
-import process from "node:process";
 
 dotenv();
 const bot = new Bot(String(process.env.BOT_TOKEN));
