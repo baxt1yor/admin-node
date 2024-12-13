@@ -3,7 +3,7 @@ const bot = require('../../dist/main');
 exports.handler = async (event) => {
   try {
     // const update = JSON.parse(event.body);
-    console.log('Received update:', event);
+    console.error('Received update:', event);
 
     // await bot.default.init();
     // await bot.default.updates.handleUpdate(update);
