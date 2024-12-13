@@ -1,2 +1,4 @@
 [build]
   functions = "netlify/functions"
+[template.environment]
+    BOT_TOKEN=""
