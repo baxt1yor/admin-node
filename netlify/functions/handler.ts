@@ -1,17 +1,14 @@
 import {Handler, HandlerEvent} from "@netlify/functions";
 import bot from "../../src/main";
 
-let isBotInitialized = false;
+let isBotInitialized : boolean = false;
 
 
 export const handler: Handler = async (event: HandlerEvent) => {
     try {
         const update = JSON.parse(event.body || "{}");
 
-        if (!isBotInitialized) {
-            await bot.init();
-            isBotInitialized = true;
-        }
+        await bot.init();
 
         await bot.updates.handleUpdate(update);
         return {
