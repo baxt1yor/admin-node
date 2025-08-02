@@ -1,5 +1,5 @@
 import {Handler, HandlerEvent} from "@netlify/functions";
-import bot from "@src/main";
+import bot from "../../src/main";
 
 let isBotInitialized = false;
 
