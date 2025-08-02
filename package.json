@@ -1,22 +1,23 @@
 {
   "name": "bot-ts",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "author": "Baxtiyor Eshametov",
+  "license": "ISC",
   "scripts": {
     "build": "tsc",
+    "dev": "netlify dev",
+    "deploy": "netlify deploy",
     "start": "node dist/main.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "^22.10.2",
-    "tslint": "^5.20.1",
-    "typescript": "^5.7.2"
   },
   "dependencies": {
     "@netlify/functions": "^2.8.2",
     "dotenv": "^16.4.7",
     "gramio": "^0.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "netlify-cli": "^17.23.1"
   }
 }

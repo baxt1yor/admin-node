@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", // allows @src alias
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ES2020", "DOM"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"]
-    },
-    "moduleResolution": "node",
-    "target": "ES2020",
-    "module": "CommonJS",
-    "esModuleInterop": true
+    }
   },
   "include": ["src", "netlify/functions"]
 }
